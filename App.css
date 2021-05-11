@@ -1,0 +1,207 @@
+@import '~antd/dist/antd.css';
+
+.App {
+    
+    text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.site-layout-content {
+    min-height: 280px;
+    
+    background: #fff;
+}
+
+
+
+.ant-row-rtl #components-layout-demo-top .logo {
+    float: right;
+    
+}
+
+.PieDePagina {
+    height: 100%;
+    text-align: unset;
+    background-color: #505050;
+}
+
+.Cuerpo {
+    
+    align-content: center;
+    height: 100vh;
+    background: url(fondo.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+
+
+.TextoMedio {
+    color: #fffbf1;
+    text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+    font-size: 4vh;
+    font-weight: bold;
+    text-decoration: none;
+    letter-spacing: 1px;
+    margin: 0;
+    position: absolute;
+    top: 50vh;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.Intro {
+    font-family: helvetica, arial, sans-serif;
+    background-color: #2e2e31;
+}
+
+.TextoMedio:before, .TextoMedio:after {
+    content: '';
+    padding: 15vh 12vh;
+    position: absolute;
+    left: 55%;
+    width: 100%;
+    top: 8vh;
+    display: block;
+    border: 1vh solid red;
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+    .TextoMedio:before {
+    border-color: purple purple rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    z-index: -1;
+}
+
+    .TextoMedio:after {
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #52006F #52006F;
+    box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
+}
+
+@keyframes tipsy {
+    0 {
+        transform: translateX(-50%) translateY(-50%) rotate(0deg);
+    }
+
+    100% {
+        transform: translateX(-50%) translateY(-50%) rotate(360deg);
+    }
+}
+
+footer {
+    flex: 0 0 auto;
+}
+
+footer {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+}
+
+    footer .footer-limiter {
+        max-width: 880px;
+        margin: 0 auto;
+    }
+
+    footer .footer-left p {
+        color: #8f9296;
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* Footer links */
+
+    footer p.footer-links {
+        font-size: 18px;
+        font-weight: bold;
+        color: #ffffff;
+        margin: 0 0 10px;
+        padding: 0;
+    }
+
+        footer p.footer-links a {
+            display: inline-block;
+            line-height: 1.8;
+            text-decoration: none;
+            color: inherit;
+        }
+
+    footer .footer-right {
+        float: right;
+        margin-top: 6px;
+        max-width: 180px;
+    }
+
+        footer .footer-right a {
+            display: inline-block;
+            width: 35px;
+            height: 35px;
+            background-color: #33383b;
+            border-radius: 2px;
+            font-size: 20px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 35px;
+            margin-left: 3px;
+        }
+
+/* If you don't want the footer to be responsive, remove these media queries */
+
+@media (max-width: 600px) {
+
+    footer .footer-left,
+    footer .footer-right {
+        text-align: center;
+    }
+
+    footer .footer-right {
+        float: none;
+        margin: 0 auto 20px;
+    }
+
+    footer .footer-left p.footer-links {
+        line-height: 1.8;
+    }
+}
+
+
+
+
+
